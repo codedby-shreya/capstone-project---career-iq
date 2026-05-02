@@ -11,7 +11,7 @@ from routes.resume_routes import resume_bp
 app = Flask(__name__)
  
 # Allow requests from your Next.js frontend (adjust origin as needed)
-CORS(app, origins=["http://localhost:3000"])
+CORS(app)
  
 # Register blueprints
 app.register_blueprint(resume_bp)
